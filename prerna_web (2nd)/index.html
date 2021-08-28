@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <title>IGNAVIAA</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img class="logoImg" alt="LogoImg" src="images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onClick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onClick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Prerna</h1>
+            <p>I am <span class="movingText"></span></p>
+            <a href="https://www.fiverr.com/s2/a273ec643c" class="hero-btn">Hire me</a>
+        </div>
+    </section>
+
+<!------- About Me -------->
+<section class="AboutMe" id="about">
+    <div class = "about-wrapper">
+        <div class = "about-left">
+          <div class = "about-left-content">
+            <div>
+              <div class = "shadow">
+                <div class = "about-img">
+                  <img src = "/images/profile.jpeg" alt = "about image">
+                </div>
+              </div>
+  
+              <h2>Prerna<br>Sharma</h2>
+              <h3>Graphic designer</h3>
+            </div>
+  
+            <ul class = "icons">
+              <a class="icon_color" href="https://www.linkedin.com/in/prerna-sharma-1a2142204/"><li><i class = "fab fa-linkedin"></i></li></a>
+              <a class="icon_color" href="https://www.instagram.com/_.ignaviaa._/"><li><i class = "fab fa-instagram"></i></li></a>
+            </ul>
+          </div>
+        </div>
+  
+        <div class = "about-right">
+          <h1>My <span>STORY</span></h1>
+          <h2>Here's who I am & what I do</h2>
+          <div class = "about-para">
+            <p>Hello!   I'm Prerna Sharma, but you can call me ignaa <br> A sweet lil' 18- years old teen raised in India and love to create things and play with colours &#128147 .I just love making minimalist designs and try to make unique stuffs. I'm a beginner and am here looking for more opportunities to work and impove my skills on a freelance basis.</p>
+          </div>
+        </div>
+      </div>
+</section>
+
+<!-------- Gallery ---------->
+<section id="gallery">
+  <div class = "gallery-wrapper">
+    <div class = "gallery-right">
+      <h2 class="h2-gallery">My <span class="span-gallery">Work</span></h2>
+    </div>
+
+    <div class = "gallery-left">
+       <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="/images/work.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="/images/work(1).png" alt="">
+        </div>
+        <div class="slide">
+          <img src="/images/work(2).png" alt="">
+        </div>
+        <div class="slide">
+          <img src="/images/work(3).png" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+  </div>
+               
+</section>
+
+<!------------- Contact ------------------->
+<section id="contact">
+  <div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2 class="h2contact">Contact Me</h2>
+        <form action="mail.php" method="post">
+          <input type="text" class="field" name="name" placeholder="Your Name">
+          <input type="email" class="field" name="emailaddress" placeholder="Your Email">
+          <input type="text" class="field" name="mobile" placeholder="Phone">
+          <textarea placeholder="Message" class="field" name="message"></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--------- Footer ----------->
+<section class="footer">
+  <h4>Made By <a href="https://github.com/kriptonian1">kriptonian</a></h4>
+  <div class="icons-f">
+    <a href="https://www.facebook.com/sawan.Kryptonian"><i class="fa fa-facebook"></i> </a>
+    <a href="https://twitter.com/kriptonian8"><i class="fa fa-twitter"></i> </a>
+    <a href="https://www.instagram.com/_kriptonian/"><i class="fa fa-instagram"></i> </a>
+    <a href="https://www.linkedin.com/in/sawan-bhattacharya-903a96204"><i class="fa fa-linkedin"></i> </a>
+  </div>
+</section>
+
+<!--------- Cursor ------------>
+<div id="cursor">
+
+</div>
+
+<!--------------- Js for Touggle menu -------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    </script>
+
+<!---------- Js for cursor ------------>
+  <script>
+    "use strict";
+    var cursor = document.querySelector("#cursor");
+    var cursorListner = function cursorListner(event){
+      cursor.style.top = event.y +"px";
+      cursor.style.left = event.x +"px";
+    };
+    window.addEventListener("mousemove", cursorListner);
+  </script>
+
+  <!--------Gallery----------->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="jquery.hislide.js"></script>
+  <script>
+    $('.slide').hiSlide();
+  </script>
+
+<!-----------Gallery slide auto---------->
+<script type="text/javascript">
+  var counter = 1;
+  setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+      counter = 1;
+    }
+  }, 5000);
+  </script>
+    
+</body>
+</html>
